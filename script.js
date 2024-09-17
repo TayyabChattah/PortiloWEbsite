@@ -10,23 +10,23 @@ const portfolioData = {
     education: [
         {
             degree: "Bachelor of Science in Computer Science",
-            institution: "University Name",
-            graduationYear: "2024",
-            courses: ["Web Development", "Mobile Application Development", "Algorithms", "Databases"]
+            institution: "Information Technology University",
+            graduationYear: "2025",
+            courses: ["Web Development", "Computer programming fundamentals ", "Algorithms", "Databases"]
         }
     ],
     projects: [
         {
-            title: "Project 1",
-            description: "Description of project 1. Used HTML, CSS, JavaScript to solve problem X."
+            title: "Covid App",
+            description: "Used flutter and rest api to track covid cases"
         },
         {
-            title: "Project 2",
-            description: "Description of project 2. Built using React and Node.js."
+            title: "Weather App",
+            description: "Used api to predict weather"
         },
         {
-            title: "Project 3",
-            description: "Description of project 3. Created with Python and Flask."
+            title: "Text Recongnition system",
+            description: "Recongnizes number and prediction system"
         }
     ],
     contact: {
@@ -79,7 +79,7 @@ portfolioData.projects.forEach(project => {
     projectsList.appendChild(projectDiv);
 });
 
-// Populate contact section
+
 const contactInfo = document.getElementById('contact-info');
 const emailLi = document.createElement('li');
 emailLi.textContent = `Email: ${portfolioData.contact.email}`;
@@ -93,5 +93,5 @@ const linkedinLi = document.createElement('li');
 linkedinLi.innerHTML = `LinkedIn: <a href="#">${portfolioData.contact.linkedin}</a>`;
 contactInfo.appendChild(linkedinLi);
 
-// Populate footer
+
 document.getElementById('footer').textContent = portfolioData.footer;
